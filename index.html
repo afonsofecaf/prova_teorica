@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Prova teórica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h2 class="mb-4 text-center">Prova teórica</h2>
+    <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="turma1-tab" data-bs-toggle="tab" data-bs-target="#turma1" type="button" role="tab" aria-controls="turma1" aria-selected="true">
+          Turma 1
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="turma2-tab" data-bs-toggle="tab" data-bs-target="#turma2" type="button" role="tab" aria-controls="turma2" aria-selected="false">
+          Turma 2
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <!-- Turma 1 -->
+      <div class="tab-pane fade show active" id="turma1" role="tabpanel" aria-labelledby="turma1-tab">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            Construção e otimização de consultas em SQL
+          </div>
+          <div class="card-body">
+            <ol class="mb-3">
+              <li>Preencha seus dados no papel pautado</li>
+              <li>Escreva a questão no início</li>
+              <li>Responda a questão de forma livre</li>
+            </ol>
+            <p><strong>Pergunta aberta:</strong></p>
+            <p>
+              Explique, com base nos exemplos apresentados, como você pode analisar e otimizar consultas SQL no PostgreSQL utilizando CTEs, funções de janela, subqueries e EXPLAIN ANALYZE. 
+              Comente como identificar gargalos de performance, interpretar o plano de execução e sugerir possíveis otimizações para consultas complexas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Turma 2 -->
+      <div class="tab-pane fade" id="turma2" role="tabpanel" aria-labelledby="turma2-tab">
+        <div class="card">
+          <div class="card-header bg-success text-white">
+            Introdução aos bancos de dados NoSQL: conceitos e características
+          </div>
+          <div class="card-body">
+            <ol class="mb-3">
+              <li>Preencha seus dados no papel pautado</li>
+              <li>Escreva a questão no início</li>
+              <li>Responda a questão de forma livre</li>
+            </ol>
+            <p><strong>Pergunta aberta:</strong></p>
+            <p>
+              Descreva, com base nos exemplos apresentados, como é feita a configuração do Firestore no Google Colab, a criação de documentos com diferentes estruturas e tipos de dados, e as vantagens do modelo NoSQL para aplicações flexíveis. 
+              Comente sobre as diferenças em relação ao modelo relacional, destacando situações em que o NoSQL pode ser mais vantajoso.
+            </p>
+            <div class="alert alert-warning mt-4">
+              <strong>Etapas sugeridas:</strong>
+              <ul>
+                <li>Instalação e configuração do Firebase no Colab</li>
+                <li>Criação de documentos com IDs específicos e automáticos</li>
+                <li>Uso de arrays, objetos aninhados e tipos diversos</li>
+                <li>Importação de dados de um CSV</li>
+                <li>Operações em lote</li>
+              </ul>
+            </div>
+            <pre class="bg-light p-3 mt-3"><code># Exemplo de inicialização do Firestore no Colab
+cred = credentials.Certificate('nome-do-arquivo.json')
+firebase_admin.initialize_app(cred)
+db = firestore.client()
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
